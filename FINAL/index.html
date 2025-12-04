@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Amerika Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kelompok 10</div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#pengenalan">Latar Belakang</a></li>
+                <li><a href="#peta">Peta Distribusi</a></li>
+                <li><a href="#statistik">Data Statistik</a></li>
+                <li><a href="#tim">Tim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BERANDA / SLIDER -->
+    <section id="beranda" class="hero-section fade-in">
+        <div class="slider">
+            <div class="slides fade">
+                <img src="imgkopi1.jpg">
+            </div>
+
+            <div class="slides fade">
+                <img src="imgkopi2.jpg">
+            </div>
+
+            <div class="slides fade">
+                <img src="imgkopi3.jpg">
+            </div>
+
+            <div class="hero-text">
+                <h1>Hubungan Sinkronisasi Kelembapan Biji Kopi Benua Amerika terhadap Warna dan Cita Rasa Hasil Roasting
+</h1>
+                <p>Menjelajahi cita rasa kopi dari Brazil, Mexico, Guatemala, dan El Salvador</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGENALAN KOPI -->
+    <section id="pengenalan" class="section fade-in">
+        <h2>LATAR BELAKANG</h2>
+        <div class="intro-container">
+
+        <div class="intro-left">
+            <img src="imgkopiintro.png" class="intro-img">
+            <img src="imgpetaamerika.png" class="intro-img">
+        </div>
+
+        <div class="intro-right">
+            <p class="intro-text">
+        <p class="intro-text">
+            <b>Kopi merupakan komoditas global dengan karakteristik rasa yang sangat dipengaruhi oleh kondisi geografis serta proses pascapanen,</b>
+            di mana kadar air (moisture content) menjadi faktor paling krusial karena menentukan stabilitas selama roasting serta pembentukan<b> warna, aroma, dan cita rasa akhir (Arumsari et al., 2021).</b> 
+            Variasi kelembapan akibat perbedaan iklim, metode pengolahan seperti washed atau natural process, serta teknik penyimpanan dapat menyebabkan ketidaksinkronan proses pemanasan
+            biji berkadar air tinggi memerlukan waktu lebih lama untuk mencapai suhu inti, sedangkan kadar air rendah berisiko menyebabkan over-roasting dan ketidakteraturan warna.
+            <br><br>
+            Wilayah Amerika meliputi Brasil, Kolombia, Peru, Honduras, hingga Guatemala mempunyai iklim tropis-subtropis stabil, tanah vulkanik kaya mineral,
+            dan praktik budidaya yang mendukung kestabilan kadar air biji sebelum roasting. Lingkungan agronomis tersebut memengaruhi pembentukan senyawa prekursor rasa dan menghasilkan profil yang bersih, bright, atau fruity
+            tergantung metode prosesnya. Namun pemantauan kelembapan secara digital masih terbatas, sehingga diperlukan sistem analitik terintegrasi untuk memvisualisasikan <b> hubungan sinkronisasi kadar air biji kopi Amerika 
+            terhadap warna dan cita rasa hasil roasting.</b> Website ini disusun untuk menganalisis keterkaitan tersebut dan menyajikannya dalam bentuk dashboard analitik digital yang lebih informatif dan interaktif.
+        </p>
+    </section>
+
+     <!-- PETA INTERAKTIF -->
+   <section id="peta" class="fade-in">
+    <h2>PESEBARAN SAMPEL</h2>
+    <div class="funfact-wrapper">
+
+    <!-- BAGIAN KIRI -->
+    <div class="funfact-column">
+        <div class="funfact-box fade-in">
+            <img src="brazil.jpg" class="funfact-icon">
+            <h3>Brazil</h3>
+            <p>Negara penghasil kopi terbesar di dunia selama 150 tahun.</p>
+        </div>
+
+        <div class="funfact-box fade-in">
+            <img src="elsavador.jpg" class="funfact-icon">
+            <h3>El Salvador</h3>
+            <p>Dikenal dengan kopi varietas Pacamara yang sangat premium.</p>
+        </div>
+    </div>
+    
+      <!-- ==== PETA ==== -->
+        <div class="peta-wrapper">
+            <div id="map"></div>
+        </div>
+
+    <!-- BAGIAN KANAN -->
+    <div class="funfact-column">
+        <div class="funfact-box fade-in">
+            <img src="mexico.webp" class="funfact-icon">
+            <h3>Mexico</h3>
+            <p>Salah satu penghasil kopi organik terbesar di dunia.</p>
+        </div>
+
+        <div class="funfact-box fade-in">
+            <img src="guetamala.jpg" class="funfact-icon">
+            <h3>Guatemala</h3>
+            <p>Kopi Guatemala terkenal dengan cita rasa coklat & aroma floral.</p>
+        </div>
+    </div>
+
+</div>
+
+</section>
+    
+    
+
+
+    <!-- DATA STATISTIK (POWER BI) -->
+    <section id="statistik" class="section fade-in">
+        <h2>Data Statistik Produksi & Kualitas Kopi</h2>
+        <p>Hasil Analisis Menggunakan Power BI</p>
+        
+        <div class="powerbi-box">
+            <!-- TARUH SEMBEDAN POWER BI DI SINI -->
+            
+            <iframe width="100%" height="500" src="https://app.powerbi.com/reportEmbed?reportId=d23cd667-964d-4a16-9475-dcd03fe929d1&autoAuth=true&ctid=fedd5298-8e66-45f1-b321-fd38ad0ff722" frameborder="0"></iframe>
+        </div>
+    </section>
+
+
+    <!-- TIM -->
+    <section id="tim" class="section">
+        <h2>KELOMPOK 10 TEAM</h2>
+
+        <div class="team-container">
+            <div class="team-card">
+                <img src="imgteam1.png">
+                <h3>Faizah Aura Salsabila</h3>
+                <p>F3401241096</p>
+            </div>
+
+            <div class="team-card">
+                <img src="imagteam2.png">
+                <h3>Shaquila Lubis</h3>
+                <p>F34012141101</p>
+            </div>
+
+            <div class="team-card">
+                <img src="imgteam3.png">
+                <h3>Chatya Putri Dwitama</h3>
+                <p>F3401241126</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Dashboard Kopi Amerika</p>
+    </footer>
+
+<script src="script.js"></script>
+<script src="mapdata.js"></script>
+<script src="worldmap.js"></script> 
+</body>
+</html>

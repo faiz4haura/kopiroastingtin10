@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0e0cd;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #3b2204;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.hero-section {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.section {
+    width: 85%;
+    margin: 50px auto;
+}
+
+h2 {
+    color: #3f2004;
+    text-align: center;
+    font-size: 32px;   /* kamu boleh ubah sesuai selera */
+    font-weight: 600;  /* tebal yang elegan */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+    /* --- FONT UNTUK PENGENALAN --- */
+.intro-text {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+}
+/* Keadaan sebelum muncul */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+
+/* Keadaan setelah muncul */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* --- LAYOUT INTRO (FOTO KIRI + TEKS KANAN) --- */
+.intro-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.intro-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: transparent;
+}
+
+.intro-img {
+    width: 80%;
+    height:auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    background: transparent;
+}
+
+.intro-right {
+    width: 65%;
+}
+
+/* POWER BI */
+.powerbi-box {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.peta-layout {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+
+.peta-wrapper {
+    width: 55%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== WRAPPER FUNFACT (2 kiri + 2 kanan) ==== */
+.funfact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+/* Kolom kiri dan kanan */
+.funfact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 23%;
+}
+
+/* Box Funfact */
+.funfact-box {
+    background: rgb(255, 223, 66);
+    padding: 5pxpx;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover efek */
+.funfact-box:hover {
+    transform: translateY(-6px);
+}
+
+/* Icon di dalam box */
+.funfact-icon {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+/* Untuk nama negara */
+.funfact-box h3 {
+    color: #3c2a21;
+    font-weight: 700;
+}
+.funfact-box {
+    background: #FFF4E6;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.funfact-box h3 {
+    color: #5A3E2B;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.funfact-box p {
+    color: #6b6b6b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
+@media(max-width: 1100px) {
+    .funfact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funfact-column {
+        width: 80%;
+    }
+}
+
+
+
+
+/* TEAM SECTION */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-card {
+    width: 30%;
+    background: rgba(44, 28, 2, 0.452);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #111;
+    padding: 15px;
+    color: white;
+    margin-top: 40px;
+}
